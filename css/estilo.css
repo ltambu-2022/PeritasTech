@@ -24,11 +24,26 @@
     width: 500px; 
     height: 120px;
 }
+
+
 .logo2 {
     width: 250px; 
     height: 200px;
-}
+    animation-name: un_efecto;
+   animation-iteration-count: infinite;
+   animation-timing-function: ease-in;
+   animation-duration: 2s;
+   }
 
+ @keyframes un_efecto {
+    0%{ width: 100px; }
+    0.2s{ width: 50px; }
+    25%{ width: 300px; }
+    50%{ width: 200px;}
+    75%{ width: 300px;}
+    100%{ width: 100px;}
+ }
+ 
 header{
     grid-area: header;
     font-family:'Lato', sans-serif;
@@ -101,7 +116,7 @@ label {
         
 body {
     height: 800px;
-    background-color: rgb(32, 31, 31);
+    background-image: linear-gradient(to right, rgb(32, 31, 31), rgb(87, 85, 85));
     background-size: 25rem;
     background-repeat: no-repeat;
     background-size: cover;
@@ -170,7 +185,6 @@ footer .horarios {
     align-items: stretch;
 }
 article {
-    background-color: rgb(32, 31, 31);
     display: grid;
     grid-template-columns: 212px;
     grid-template-rows: auto;
@@ -180,12 +194,17 @@ article {
     align-items: center;
     justify-self: center;
 }
-article img {
-    width: 230px;
-    height: 220px;
-}
-}
 
+article img {
+        width: 230px;
+        height: 220px;
+        transition: height 1s;
+        }
+article img:hover { /*hover: indica que estas caracteristicas se aplican al pasar el mourse x arriba*/
+        height: 250px;
+        width: 250px
+    }
+ 
 /*Vista Mobile*/
 
 @media screen and (max-width: 767px) {
@@ -193,6 +212,10 @@ article img {
     .logo1 {
         width: 250px; 
         height: 110px;
+    }
+    
+    body {
+        background-image: linear-gradient(to right, rgb(32, 31, 31), rgb(87, 85, 85))
     }
 
     .logo2 {
