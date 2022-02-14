@@ -15,18 +15,29 @@
         <img class= "logo2" src="../Imagenes/imagen.png">
         <nav>
             <input type="search" placeholder="Buscar...">
-            <ul class="padre">
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="../Sections/Productos y servicios.html">Productos</a>
-                <ul>
-                    <li><a href="">Componentes</a></li>
-                    <li><a href="">Periféricos</a></li>
-                    <li><a href="">Accesorios</a></li>
-                </ul>
+            <ul class="nav">
+                <div class="nav">
+                <li class="nav-item">
+                <a class="nav-link" href="../index.html">Inicio</a>
                 </li>
-                <li><a href="../Sections/contacto.html">Contacto</a></li>
-                <li><a href="../Sections/ubicacion.html">Ubicación</a></li>
-                <li><a href="../Sections/Ayuda.html">Ayuda</a></li>
+                <li class="nav-item">
+                 <a class="nav-link" href="../Sections/Productos y servicios.html">Productos</a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item">Componentes</a>
+                    <a class="dropdown-item">Periféricos</a>
+                    <a class="dropdown-item">Accesorios</a>
+                </div>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="../Sections/contacto.html">Contacto</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="../Sections/ubicacion.html">Ubicación</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="../Sections/Ayuda.html">Ayuda</a>
+                </li>
+                </div>
             </ul>
         </nav>
     </header>
@@ -42,17 +53,17 @@
     <br>
 <h3>Contactate con nosotros al 11-1234-5678 o dejános tu mensaje aquí:</h3>
 <br>
-<form>
+<div class="form-group">
     <label for=""usuario>Nombre</label>
     <input type="text" placeholder="Ingrese su Nombre">
     <br><br>
     <label for=""usuario>E-mail</label>
-    <input type="text" placeholder="Ingrese su E-mail">
+    <input type="text" class="form-control" placeholder="Ingrese su E-mail">
     <br><br>
-    <textarea placeholder="Ingrese su mensaje" name="" id="" cols="30" rows="10"></textarea>
+    <textarea class="form-control" placeholder="Ingrese su mensaje" name="" id="" cols="30" rows="10"></textarea>
     <br><br>
-    <input type="submit">
-</form>
+    <button type="submit" class="btn btn-default"> Enviar </button>
+</div>
 </main>
 <footer>
     <h3 class="horarios"> Horarios de atención: lunes a viernes de 11:00 - 18:00hs</h3>

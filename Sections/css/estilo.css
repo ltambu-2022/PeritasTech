@@ -60,28 +60,26 @@ main {
 ul {
     list-style: none;
 }
-.padre {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: right;
-    align-content: right;
-}
-nav ul li a {
-    color: rgb(130, 255, 105);
-    background-color: black;
-    display: flex;
-    justify-content: center;
+.nav{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
     align-content: center;
 }
-.padre>li>ul{
-    display: none;
-  } /*PARA QUE EL MENÚ DESPLEGABLE APAREZCA SOLO AL PASAR EL CURSOR*/
 
- 
-.padre>li:hover>ul {
-    display:block;
-  } /*MENÚ DESPLEGABLE DE PRODUCTOS Y SERVICIOS*/
+.nav .nav-item .dropdown-menu {
+   display: none;
+   } 
+   
+.nav .nav-item:hover .dropdown-menu {
+   display: block;
+    } 
+
+.nav .nav-item a {
+background-color: black;
+color: rgb(130, 255, 105);
+display: flex;
+justify-content: center;
+}
 
 h1 {
     color: rgb(255, 255, 255);
@@ -295,17 +293,28 @@ iframe {
         width: 170px; 
         height: 120px;
     }
-
-    .padre>li>ul{
-        display: none;
-      } /*PARA QUE EL MENÚ DESPLEGABLE APAREZCA SOLO AL PASAR EL CURSOR*/
+    .nav{
+        display: grid;
+        grid-template-columns: auto auto auto auto auto;
+        align-content: center;
+        list-style-type: none
+    }
     
-     
-    .padre>li:hover>ul {
-        display:block;
-      } /*MENÚ DESPLEGABLE DE PRODUCTOS Y SERVICIOS*/
+    .nav .nav-item .dropdown-menu {
+       display: none;
+       } 
+       
+    .nav .nav-item:hover .dropdown-menu {
+       display: block;
+        } 
     
-
+    .nav .nav-item a {
+    background-color: black;
+    color: rgb(130, 255, 105);
+    display: flex;
+    justify-content: center;
+    }
+        
     body {
         background-image: linear-gradient(to right, rgb(32, 31, 31), rgb(87, 85, 85))
     }
@@ -457,5 +466,7 @@ iframe {
         border-style: groove;
         grid-area: footer;
         }
-
+header {
+    background-image: url(header1.jpg);
+        }
 }

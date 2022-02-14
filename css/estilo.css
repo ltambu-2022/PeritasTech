@@ -66,29 +66,27 @@ ul {
     list-style-type: none;
     }
 
-.padre {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: right;
-    align-content: right;
-}
-nav ul li a {
-    color: rgb(130, 255, 105);
-    background-color: black;
-    display: flex;
-    justify-content: center;
-    align-content: center;
-}
-.padre>li>ul{
-    display: none;
-  } /*PARA QUE EL MENÚ DESPLEGABLE APAREZCA SOLO AL PASAR EL CURSOR*/
-
- 
-.padre>li:hover>ul {
-    display:block;
-  } /*MENÚ DESPLEGABLE DE PRODUCTOS Y SERVICIOS*/
-
+.nav{
+        display: grid;
+        grid-template-columns: auto auto auto auto auto;
+        align-content: center;
+    }
+   
+.nav .nav-item .dropdown-menu {
+       display: none;
+       } 
+       
+.nav .nav-item:hover .dropdown-menu {
+       display: block;
+        } 
+   
+.nav .nav-item a {
+   background-color: black;
+   color: rgb(130, 255, 105);
+   display: flex;
+   justify-content: center;
+   }
+   
 h1 {
     color: rgb(255, 255, 255);
     font-family: 'Lato', sans-serif;
@@ -209,6 +207,13 @@ article img:hover { /*hover: indica que estas caracteristicas se aplican al pasa
 
 @media screen and (max-width: 767px) {
 
+
+ .contenedor {
+        grid-template-areas: "header header"
+                                "main main"
+                                "footer footer"
+    }
+
     .logo1 {
         width: 250px; 
         height: 110px;
@@ -227,25 +232,64 @@ article img:hover { /*hover: indica que estas caracteristicas se aplican al pasa
         color: white;
     }
 
-    .padre>li>ul{
-        display: none;
-      } /*PARA QUE EL MENÚ DESPLEGABLE APAREZCA SOLO AL PASAR EL CURSOR*/
+    .nav{
+        display: grid;
+        grid-template-columns: auto auto auto auto auto;
+        align-content: center;
+        list-style-type: none
+    }
     
-     
-    .padre>li:hover>ul {
-        display:block;
-      } /*MENÚ DESPLEGABLE DE PRODUCTOS Y SERVICIOS*/
+    .nav .nav-item .dropdown-menu {
+       display: none;
+       } 
+       
+    .nav .nav-item:hover .dropdown-menu {
+       display: block;
+        } 
     
-    article img {
-        width: 70px;
-        height: 50px;
-        }
-
-    footer {
-        color: rgb(255, 255, 255);
+    .nav .nav-item a {
+    background-color: black;
+    color: rgb(130, 255, 105);
+    display: flex;
+    justify-content: center;
+    }
+    main h2 {
         font-family: 'Lato', sans-serif;
-        background-image: url(header1.jpg);
-        border-style: groove;
-        grid-area: footer;
+        font-size: large;
+        text-align: justify;
+    }
+
+    .pcs {
+        display: grid;
+        grid-template-columns: 150px 150px;
+        grid-template-rows: 150px 150px 150px;
+        justify-content: center;
+        justify-items: center;
+        align-items: center;
+    }
+    article img {
+        width: 150px;
+        height: 150px;
+        transition: height 1s;
         }
+       
+    article img:hover { /*hover: indica que estas caracteristicas se aplican al pasar el mourse x arriba*/
+            height: 180px;
+            width: 180px
+        }
+    
+        footer {
+            color: rgb(255, 255, 255);
+            font-family: 'Lato', sans-serif;
+            font-size: small;
+            background-image: url(header1.jpg);
+            border-style: groove;
+            grid-area: footer;
+            display: grid;
+            grid-template-columns: auto 50px 50px 60px;
+            }
+            }
+
+    header {
+        background-image: url(header1.jpg);
     }
