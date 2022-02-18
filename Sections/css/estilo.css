@@ -46,8 +46,7 @@ header{
     background-image: url(header1.jpg);
     padding-bottom: 100px;
     font-size: x-large;
-    width: 100%;
-}
+    }
 
 ul {
     list-style: none;
@@ -121,135 +120,73 @@ h2 a {
     background-image: url(header1.jpg);
 }
 
-section {
+.grid {
     display: grid;
     grid-template-columns: auto auto auto;
-    grid-template-rows: auto auto auto;
-    grid-column-gap: 15px;
-    grid-row-gap: 15px;
-    justify-items: stretch;
-    align-items: stretch;
+    justify-content: center;
+    grid-column-gap: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.garant {
+    display: grid;
+    grid-template-columns: 500px;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.grid div img {
+    width: 270px;
+    height: 200px;
     }
 
-.Prods {
-    background-color:rgb(255, 255, 255);
-    border-radius: 15px;
+.grid div h2,
+.garant .garant1 h2 {
+    color: black;
     text-align: center;
-    justify-self: auto;
-    align-self: auto;
-    border-style:groove;
-  }
+    font-size: large;
+}
 
-.Prod1{
-    color: rgb(7, 7, 7);
+.grid div,
+.garant1 {
+    display: grid;
+    background-color: white;
+    justify-items: center;
+    border-style: groove;
     }
-
-footer {
-        color: rgb(255, 255, 255);
-        font-family: 'Lato', sans-serif;
-        background-image: url(header1.jpg);
-        border-style: groove;
-        display: grid;
-        grid-template-columns: 500px auto auto auto;
-        justify-content: space-between
-        }
     
-footer .redes { 
-        font-size: large;
-        font-weight: bold;
-        padding: 5px;
-        margin: 5px;
-        display: flex;
-        text-align: right;
-        justify-content: right;
-        align-items: right;
-        flex-direction:row;
-        }
-footer .horarios {
-        display: flex;
-        color: rgb(255, 255, 255);
-        text-align: left;
-        justify-content: left;
-        align-items: left;
-        flex-direction:row;
-    }
+.grid div button {
+    background-color: black;
+    color: rgb(130, 255, 105);
+    font-family:'Lato', sans-serif;
+}
 
-.ayuda { 
-        grid-area: main;
-        display: grid;
-        align-content: center;
-        justify-content: center;
-    }
+
 .pagos,
 .entregas,
 .garantia {
-        color: rgb(255, 255, 255);
-        font-family: 'Lato', sans-serif;
-        text-align: center;
-        display: grid;
-        grid-template-columns: auto;
-        grid-template-rows: auto;
-        grid-column-gap: 15px; 
-        grid-row-gap: 15px;
-        justify-items: stretch;
-        align-items: stretch;
-        border-radius: 15px;
-        border-style:groove;
-        background-image: url(header1.jpg);
-    }
-
-.formas {
-        display: grid;
-        grid-template-columns: auto auto auto;
-        grid-template-rows: auto auto auto;
-        grid-column-gap: 15px;
-        grid-row-gap: 15px;
-        justify-items: stretch;
-        align-items: stretch;
-        }
-
-.env {  
-        display: grid;
-        grid-template-columns: auto auto;
-        grid-template-rows: auto auto;
-        grid-column-gap: 15px;
-        grid-row-gap: 15px;
-        justify-items: stretch;
-        align-items: stretch;
-        }
-    
-.garant { 
+            color: rgb(255, 255, 255);
+            font-family: 'Lato', sans-serif;
+            text-align: center;
             display: grid;
             grid-template-columns: auto;
             grid-template-rows: auto;
-            grid-column-gap: 15px;
+            grid-column-gap: 15px; 
             grid-row-gap: 15px;
-            display: flex;
-            justify-content: center;
-        }
-.forma1,
-.env1,
-.env2,
-.garant1 {
-            display: grid;
-            grid-template-columns: 400px;
-            justify-items: center;
-            align-items: center;
-            justify-self: center;
-            background-color:rgb(255, 255, 255);
+            justify-items: stretch;
+            align-items: stretch;
             border-radius: 15px;
             border-style:groove;
-            text-align: center;
-            }
+            background-image: url(header1.jpg);
+        }
 
-    .ayudaimg,
-    .ayudaimg1 {
+.ayudaimg,
+.ayudaimg1 {
         width: 270px;
         height: 200px;
     }
-.garant h2 {
-            color: black;
-        }
 
 article h2 {
             color: black
@@ -266,6 +203,35 @@ article h2 {
 iframe { 
     width: 1200px;
     height: 500px 
+}
+footer {
+    color: rgb(255, 255, 255);
+    font-family: 'Lato', sans-serif;
+    background-image: url(header1.jpg);
+    border-style: groove;
+    display: grid;
+    grid-template-columns: 500px auto auto auto;
+    justify-content: space-between
+    }
+
+footer .redes { 
+    font-size: large;
+    font-weight: bold;
+    padding: 5px;
+    margin: 5px;
+    display: flex;
+    text-align: right;
+    justify-content: right;
+    align-items: right;
+    flex-direction:row;
+    }
+footer .horarios {
+    display: flex;
+    color: rgb(255, 255, 255);
+    text-align: left;
+    justify-content: left;
+    align-items: left;
+    flex-direction:row;
 }
 }
 
@@ -374,20 +340,39 @@ iframe {
         background-image: url(header1.jpg);
     }
 
-    .Prods {
-        background-color:rgb(255, 255, 255);
-        border-radius: 30px;
-        text-align: center;
-        border-style:groove;
+    .grid {
         display: grid;
-        justify-items: center;
-        align-items: center;
-        
+        grid-template-columns: auto auto auto;
+        justify-content: center;
+        grid-column-gap: 20px;
+        padding-top: 20px;
+        padding-bottom: 15px;
+        padding-top: 15px;
     }
-    .Prod1{
-        color: rgb(7, 7, 7);
-        }
 
+    .grid div img {
+        width: 120px;
+        height: 100px;
+        }
+    
+    .grid div h2,
+    .garant .garant1 h2 {
+        color: black;
+        text-align: center;
+        font-size: medium;
+    }
+    
+    .grid div,
+    .garant1 {
+        display: grid;
+        background-color: white;
+        justify-items: center;
+    }
+    .grid div button {
+        background-color: black;
+        color: rgb(130, 255, 105);
+        font-family:'Lato', sans-serif;
+    }
     .pagos,
     .entregas,
     .garantia {
@@ -406,50 +391,16 @@ iframe {
         background-image: url(header1.jpg);
     }
 
-    .formas {
-        display: grid;
-        grid-template-columns: auto auto auto;
-        grid-template-rows: auto auto auto;
-        grid-column-gap: 15px;
-        grid-row-gap: 15px;
-        justify-items: stretch;
-        align-items: stretch;
-        }
-
-    .env {  
-        display: grid;
-        grid-template-columns: auto auto;
-        grid-template-rows: auto auto;
-        grid-column-gap: 15px;
-        grid-row-gap: 15px;
-        justify-items: stretch;
-        align-items: stretch;
-        }
-    
     .garant { 
             display: grid;
             grid-template-columns: auto;
             grid-template-rows: auto;
-            grid-column-gap: 15px;
-            grid-row-gap: 15px;
             display: flex;
             justify-content: center;
+            padding-bottom: 15px;
+            padding-top: 15px;
         }
-    .forma1,
-    .env1,
-    .env2,
-    .garant1 {
-            display: grid;
-            grid-template-columns: 100%;
-            justify-items: center;
-            align-items: center;
-            justify-self: center;
-            background-color:rgb(255, 255, 255);
-            border-radius: 30px;
-            border-style:groove;
-            text-align: center;
-            }
-
+    
     article h2 { 
         color: black;
     }
