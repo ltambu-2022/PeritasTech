@@ -59,18 +59,30 @@
     <br>
 <h3>Contactate con nosotros al 11-1234-5678 o dejános tu mensaje aquí:</h3>
 <br>
-<div class="form-group">
-    <label for=""usuario>Nombre</label>
-    <input type="text" placeholder="Ingrese su Nombre">
-    <br><br>
-    <label for=""usuario>E-mail</label>
-    <input type="text" class="form-group" placeholder="Ingrese su E-mail">
-    <br><br>
-    <textarea class="form-control" placeholder="Ingrese su mensaje" name="" id="" cols="30" rows="10"></textarea>
-    <br>
-    <button type="submit"> Enviar </button>
+<div class="mb-3">
+  <h3><label for="exampleFormControlInput1" class="form-label">Correo electrónico:</label></h3>
+  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
 </div>
-
+<div class="form-check form-switch">
+  <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
+  <h4><label class="form-check-label" for="flexSwitchCheckChecked">Deseo recibir información acerca de promociones y nuevos lanzamientos</label></h4>
+</div>
+<br>
+<h3><label for="exampleFormControlInput1" class="form-label">Quiero consultar sobre:</label></h3>
+<select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
+  <option selected>Seleccione una opción</option>
+  <option value="1">Productos</option>
+  <option value="2">Servicio Técnico</option>
+  <option value="3">Otro</option>
+</select>
+<br>
+<br>
+<div class="mb-3">
+  <h3><label for="exampleFormControlTextarea1" class="form-label">Mensaje:</label></h3>
+  <textarea class="form-control" id="exampleFormControlTextarea1" rows="8"></textarea>
+  <br>
+  <button type="submit"> Enviar </button>
+</div>
 </main>
 <footer>
     <p class="horarios"> Horarios de atención: lunes a viernes de 11:00 - 18:00hs</p>
