@@ -4,6 +4,8 @@
 /*Variables*/
 $tipografiaPrincipal: x-large 'Lato', sans-serif;
 $ColorFondo: rgb(26, 26, 26);
+$redes: (fb:rgb(41, 129, 230), ig:rgb(255, 0, 212), wpp:rgb(66, 241, 66));
+$estilos: (color:white, font:'Lato' sans-serif, font-size: x-large);
 
 /*Vista Desktop*/
 
@@ -17,7 +19,7 @@ nav {
     font: $tipografiaPrincipal;
         div {
             .navbar-brand {
-                font-size: x-large;
+                font-size: map-get($estilos, font-size);
             }
             ul {
                 .nav-item {
@@ -26,8 +28,8 @@ nav {
                         background-color: $ColorFondo;
                         display: block;
                         a {
-                            color: white;
-                                    }
+                            color:rgb(66, 209, 66);
+                           }
                     .dropdown-menu {
                         display: none;
                         background-color: $ColorFondo;
@@ -60,7 +62,7 @@ main {
     }
 }
 .nosotros {
-    font-family: 'Lato', sans-serif;
+    font-family: map-get($estilos, font);
     font-size: xx-large;
     background-color: white;
     background-image: url(header1.jpg);
@@ -87,7 +89,7 @@ body {
      }
     
 .armados {
-    color: rgb(255, 255, 255);
+    color: map-get($estilos, color);
     font: $tipografiaPrincipal;
     text-align: center;
     display: grid;
@@ -127,40 +129,36 @@ img{
     }
 }
 
+
 footer {
-    color: rgb(255, 255, 255);
-    font-family: 'Lato', sans-serif;
     background-image: url(header1.jpg);
     border-style: groove;
     display: grid;
-    grid-template-columns: 500px auto auto auto;
-    justify-content: space-between;
-    .redes {
-        font-size: large;
-        font-weight: bold;
-        padding: 5px;
-        margin: 5px;
-        display: flex;
-        text-align: right;
-        justify-content: right;
-        align-items: right;
-        flex-direction:row;
-    .horarios {
-        display: flex;
-        color: rgb(255, 255, 255);
-        text-align: left;
-        justify-content: left;
-        align-items: left;
-        flex-direction:row;
-            }       
-        }
-    } 
-}
+    grid-template-columns: auto;
+    justify-content: space-around;
 
+    .redes {
+        display: grid;
+        grid-template-columns: 70px 70px 70px;
+        grid-column-gap: 50px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+       @each $i, $color in $redes {
+            .btn-#{$i} {
+                background-color: $color;
+                font-size: medium;
+                font-weight: bold;
+                    }
+                }
+            }
+        }
+}
 
 /*Vista Mobile*/
 
 @media screen and (max-width: 767px) {
+
+$redes: (fb:rgb(41, 129, 230), ig:rgb(255, 0, 212), wpp:rgb(66, 241, 66));
 
     * {
     margin: 0,5%;
@@ -271,14 +269,26 @@ img{
             }
         }
     }
-footer {
-    color: rgb(255, 255, 255);
-    font-family: 'Lato', sans-serif;
-    background-image: url(header1.jpg);
-    border-style: groove;
-    grid-area: footer;
-    display: grid;
-    grid-template-columns: auto 50px 50px 60px;
-    justify-content: space-between;
-     } 
+    footer {
+        background-image: url(header1.jpg);
+        border-style: groove;
+        display: grid;
+        grid-template-columns: auto;
+        justify-content: space-around;
+    
+        .redes {
+            display: grid;
+            grid-template-columns: 70px 70px 70px;
+            grid-column-gap: 50px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+           @each $i, $color in $redes {
+                .btn-#{$i} {
+                    background-color: $color;
+                    font-size: medium;
+                    font-weight: bold;
+                        }
+                    }
+                }
+            }
 }

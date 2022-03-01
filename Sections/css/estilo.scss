@@ -1,0 +1,529 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&family=Mochiy+Pop+P+One&family=Oswald:wght@200&family=Roboto:ital,wght@0,700;1,100&display=swap');
+
+/*Vista Desktop*/
+@media only screen and (min-width: 768px){ 
+
+$tipografiaPrincipal: x-large 'Lato', sans-serif;
+$ColorFondo: rgb(26, 26, 26);
+$redes: (fb:rgb(41, 129, 230), ig:rgb(255, 0, 212), wpp:rgb(66, 241, 66));
+%estiloayuda {
+    color: rgb(255, 255, 255);
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-column-gap: 15px; 
+    grid-row-gap: 15px;
+    justify-items: stretch;
+    align-items: stretch;
+    border-radius: 15px;
+    border-style:groove;
+    background-image: url(header1.jpg);
+    animation-duration: 3s;
+    animation-name: animacion;
+}
+%ayudaimg {
+    width: 270px;
+    height: 200px;
+}
+@mixin grid-center-groove{
+    display: grid;
+    justify-items: center;
+    border-style: groove;
+}
+
+* {
+    margin: 0%;
+}
+
+nav {
+    background-image: url(header1.jpg);
+    font: $tipografiaPrincipal;
+        div {
+            .navbar-brand {
+                font-size: x-large;
+            }
+            ul {
+                .nav-item {
+                    &:hover {
+                    .dropdown-menu {
+                        background-color: $ColorFondo;
+                        display: block;
+                        a {
+                            color: rgb(66, 209, 66);
+                                    }
+                    .dropdown-menu {
+                        display: none;
+                        background-color: $ColorFondo;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+.logo1 {
+    width: 500px; 
+    height: 120px;
+}
+
+.logo2 {
+    width: 250px; 
+    height: 200px;
+}
+
+%estiloh {
+    color: rgb(255, 255, 255);
+    font-family: 'Lato', sans-serif
+}
+main {
+    padding-left: 20px;
+    padding-right: 20px;
+    h1, h2, h3 {
+        @extend %estiloh;
+    }
+}
+
+ul {
+    list-style: none;
+}
+
+label {
+    color: rgb(255, 255, 255);
+    font-family: 'Lato', sans-serif;
+    }
+
+body {
+    height: 800px;
+    background-image: linear-gradient(to right, rgb(32, 31, 31), rgb(87, 85, 85));
+    background-size: 25rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;   
+    }
+
+h2 {
+    a {
+    color: rgb(130, 255, 105);
+    }
+}
+
+.Prod {
+    @extend %estiloh;
+    text-align: center;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-column-gap: 15px; 
+    grid-row-gap: 15px;
+    justify-items: stretch;
+    align-items: stretch;
+    border-radius: 15px;
+    border-style:groove;
+    background-image: url(header1.jpg);
+    animation-duration: 3s;
+    animation-name: animacion
+    }
+      
+@keyframes animacion {
+        from {
+          margin-left: 100%;
+          width: 300%
+        }
+      
+        to {
+          margin-left: 0%;
+          width: 100%;
+        }
+}
+
+.hsdeatencion {
+    text-align: center;
+    display: grid;
+    border: groove;
+    border-width: 5px;
+}
+.grid {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+    grid-column-gap: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.garant {
+    display: grid;
+    grid-template-columns: 500px;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.grid{
+    div{
+        img {
+    width: 270px;
+    height: 200px;
+        }
+    }
+}
+
+.grid {
+    div{ 
+        h2 {
+        color: black;
+        text-align: center;
+        font-size: large;
+        }
+    }
+}
+.garant {
+    .garant1{
+        h2 {
+    color: black;
+    text-align: center;
+    font-size: large;
+        }
+    }
+}
+
+.grid {
+    div {
+    @include grid-center-groove;
+    background-color: white;
+    }
+}
+
+.garant1 {
+    background-color: white;
+    @include grid-center-groove;
+    }
+    
+.grid {
+    div {
+        button {
+    background-color: black;
+    color: rgb(130, 255, 105);
+    font-family:'Lato', sans-serif;
+        }
+    }
+}
+
+.pagos {
+    @extend %estiloayuda;
+}
+.entregas {
+    @extend %estiloayuda;
+}
+.garantia {
+    @extend %estiloayuda;
+    }
+             
+@keyframes animacion {
+        from {
+        margin-left: 100%;
+        width: 300%;
+        }
+              
+        to {
+        margin-left: 0%;
+        width: 100%;
+        }
+    }
+
+
+.ayudaimg {
+    @extend %ayudaimg;
+}
+.ayudaimg1 {
+    @extend %ayudaimg;
+    }
+
+article {
+    h2 {
+        color: black;
+        }
+    }
+
+.ubi {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+iframe { 
+    width: 1200px;
+    height: 500px 
+}
+
+footer {
+    background-image: url(header1.jpg);
+    border-style: groove;
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: space-around;
+
+    .redes {
+        display: grid;
+        grid-template-columns: 70px 70px 70px;
+        grid-column-gap: 50px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+       @each $i, $color in $redes {
+            .btn-#{$i} {
+                background-color: $color;
+                font-size: medium;
+                font-weight: bold;
+                    }
+                }
+            }
+        }
+}
+
+
+/*Vista Mobile*/
+
+@media screen and (max-width: 767px){ 
+
+$redes: (fb:rgb(41, 129, 230), ig:rgb(255, 0, 212), wpp:rgb(66, 241, 66));
+
+    * {
+        margin: 0%;
+        }
+    
+    nav {
+        font-size: x-large;
+        background-image: url(header1.jpg);
+        font-family:'Lato', sans-serif;
+        div {
+            .navbar-brand {
+                font-size: x-large;
+            }
+            ul {
+                .nav-item {
+                    &:hover {
+                    .dropdown-menu {
+                        background-color: rgb(26, 26, 26);
+                        display: block;
+                        a {
+                            color: white;
+                                    }
+                    .dropdown-menu {
+                        display: none;
+                        background-color: rgb(26, 26, 26);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+.logo1 {
+        width: 250px; 
+        height: 110px;
+        }
+        
+.logo2 {
+        display: none;
+        }
+    
+    body {
+        background-image: linear-gradient(to right, rgb(32, 31, 31), rgb(87, 85, 85))
+        }
+    
+    main {
+            padding-left: 20px;
+            padding-right: 20px;
+            h1 {
+                color: rgb(255, 255, 255);
+                font-family: 'Lato', sans-serif}
+            h2 {
+                color: rgb(255, 255, 255);
+                font-family: 'Lato', sans-serif}
+            h3 {
+                color: rgb(255, 255, 255);
+                font-family: 'Lato', sans-serif}          
+        }
+
+    h2{
+        a {
+         color: rgb(130, 255, 105);
+    }
+}
+            
+    label {
+        color: rgb(255, 255, 255);
+        font-family: 'Lato', sans-serif;
+        }
+
+    .ubi {
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        width: auto;
+    }
+    iframe { 
+        width: 400px;
+        height: 400px;
+    }
+
+    .Prod {
+        color: rgb(255, 255, 255);
+        font-family: 'Lato', sans-serif;
+        text-align: center;
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        grid-column-gap: 15px; 
+        grid-row-gap: 15px;
+        justify-items: stretch;
+        align-items: stretch;
+        border-radius: 15px;
+        border-style:groove;
+        background-image: url(header1.jpg);
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        justify-content: center;
+        grid-column-gap: 20px;
+        padding-top: 20px;
+        padding-bottom: 15px;
+        padding-top: 15px;
+    }
+
+    .grid {
+        div{
+            img {
+        width: 120px;
+        height: 100px;
+        }
+    }
+}
+    
+    .grid {
+        div{
+        h2{
+        color: black;
+        text-align: center;
+        font-size: medium;
+            }
+        }
+    }
+
+    .hsdeatencion {
+        text-align: center;
+        display: grid;
+        border: groove;
+        border-width: 5px;
+    }
+    
+    .garant {
+        .garant1 {
+            h2 {
+        color: black;
+        text-align: center;
+        font-size: medium;
+        }
+    }
+}
+    
+    .grid {
+        div{
+        display: grid;
+        background-color: white;
+        justify-items: center;
+        }
+    }
+
+    .garant1 {
+        display: grid;
+        background-color: white;
+        justify-items: center;
+    }
+    .grid {
+        div {
+            button {
+        background-color: black;
+        color: rgb(130, 255, 105);
+        font-family:'Lato', sans-serif;
+            }
+        }
+    }
+
+    .pagos,
+    .entregas,
+    .garantia {
+        color: rgb(255, 255, 255);
+        font-family: 'Lato', sans-serif;
+        text-align: center;
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        grid-column-gap: 15px; 
+        grid-row-gap: 15px;
+        justify-items: stretch;
+        align-items: stretch;
+        border-radius: 15px;
+        border-style:groove;
+        background-image: url(header1.jpg);
+    }
+
+    .garant { 
+            display: grid;
+            grid-template-columns: auto;
+            grid-template-rows: auto;
+            display: flex;
+            justify-content: center;
+            padding-bottom: 15px;
+            padding-top: 15px;
+        }
+    
+    article {
+        h2 { 
+        color: black;
+    }
+}
+    
+    .ayudaimg {
+        width: 90px;
+        height: 90px;
+    }
+
+    .ayudaimg1 {
+        width: 70px;
+        height: 70px;
+    }
+
+    footer {
+        background-image: url(header1.jpg);
+        border-style: groove;
+        display: grid;
+        grid-template-columns: auto;
+        justify-content: space-around;
+    
+        .redes {
+            display: grid;
+            grid-template-columns: 70px 70px 70px;
+            grid-column-gap: 50px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+           @each $i, $color in $redes {
+                .btn-#{$i} {
+                    background-color: $color;
+                    font-size: medium;
+                    font-weight: bold;
+                        }
+                    }
+                }
+            }
+}

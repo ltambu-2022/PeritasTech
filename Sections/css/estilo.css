@@ -1,430 +1,405 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&family=Mochiy+Pop+P+One&family=Oswald:wght@200&family=Roboto:ital,wght@0,700;1,100&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&family=Mochiy+Pop+P+One&family=Oswald:wght@200&family=Roboto:ital,wght@0,700;1,100&display=swap");
 /*Vista Desktop*/
-@media only screen and (min-width: 768px){ 
-    
-* {
-    margin: 0%;
-}
-
-nav div .navbar-brand {
-    font-size: x-large;
-    }
-
-nav {
-    font-size: x-large;
-    background-image: url(header1.jpg);
-    font-family:'Lato', sans-serif;
-}
-
-nav div ul .nav-item .dropdown-menu {
-    display: none;
-    background-color: rgb(26, 26, 26);
-    } 
-    
-nav div ul .nav-item:hover .dropdown-menu {
-    background-color: rgb(26, 26, 26);
-    display: block;
-     }
-
-.dropdown-menu a {
+@media only screen and (min-width: 768px) {
+  .pagos, .entregas, .garantia {
     color: white;
-}
-
-.logo1 {
-        width: 500px; 
-        height: 120px;
-    }
-    
-.logo2 {
-        width: 250px; 
-        height: 200px;
-    }
-
-main {
-    padding-left: 20px;
-    padding-right: 20px;
-}
-
-ul {
-    list-style: none;
-}
-
-h1 {
-    color: rgb(255, 255, 255);
-    font-family: 'Lato', sans-serif;
-    }
-h2 {
-    color: rgb(255, 255, 255);
-    font-family: 'Lato', sans-serif;
-    }
-h3 {
-    color: rgb(255, 255, 255);
-    font-family: 'Lato', sans-serif;
-    }
-
-label {
-    color: rgb(255, 255, 255);
-    font-family: 'Lato', sans-serif;
-    }
-
-body {
-    height: 800px;
-    background-image: linear-gradient(to right, rgb(32, 31, 31), rgb(87, 85, 85));
-    background-size: 25rem;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    background-attachment: fixed;   
-    }
-
-h2 a {
-    color: rgb(130, 255, 105);
-}
-
-.Prod {
-    color: rgb(255, 255, 255);
     font-family: 'Lato', sans-serif;
     text-align: center;
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: auto;
-    grid-column-gap: 15px; 
+    grid-column-gap: 15px;
     grid-row-gap: 15px;
     justify-items: stretch;
     align-items: stretch;
     border-radius: 15px;
-    border-style:groove;
+    border-style: groove;
     background-image: url(header1.jpg);
     animation-duration: 3s;
-    animation-name: animacion
+    animation-name: animacion;
+  }
+  .ayudaimg, .ayudaimg1 {
+    width: 270px;
+    height: 200px;
+  }
+  * {
+    margin: 0%;
+  }
+  nav {
+    background-image: url(header1.jpg);
+    font: x-large "Lato", sans-serif;
+  }
+  nav div .navbar-brand {
+    font-size: x-large;
+  }
+  nav div ul .nav-item:hover .dropdown-menu {
+    background-color: #1a1a1a;
+    display: block;
+  }
+  nav div ul .nav-item:hover .dropdown-menu a {
+    color: #42d142;
+  }
+  nav div ul .nav-item:hover .dropdown-menu .dropdown-menu {
+    display: none;
+    background-color: #1a1a1a;
+  }
+  .logo1 {
+    width: 500px;
+    height: 120px;
+  }
+  .logo2 {
+    width: 250px;
+    height: 200px;
+  }
+  main h1, main h2, main h3, .Prod {
+    color: white;
+    font-family: 'Lato', sans-serif;
+  }
+  main {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  ul {
+    list-style: none;
+  }
+  label {
+    color: white;
+    font-family: 'Lato', sans-serif;
+  }
+  body {
+    height: 800px;
+    background-image: linear-gradient(to right, #201f1f, #575555);
+    background-size: 25rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+  }
+  h2 a {
+    color: #82ff69;
+  }
+  .Prod {
+    text-align: center;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-column-gap: 15px;
+    grid-row-gap: 15px;
+    justify-items: stretch;
+    align-items: stretch;
+    border-radius: 15px;
+    border-style: groove;
+    background-image: url(header1.jpg);
+    animation-duration: 3s;
+    animation-name: animacion;
+  }
+  @keyframes animacion {
+    from {
+      margin-left: 100%;
+      width: 300%;
     }
-      
-@keyframes animacion {
-        from {
-          margin-left: 100%;
-          width: 300%
-        }
-      
-        to {
-          margin-left: 0%;
-          width: 100%;
-        }
-}
-
-.grid {
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
+  .hsdeatencion {
+    text-align: center;
+    display: grid;
+    border: groove;
+    border-width: 5px;
+  }
+  .grid {
     display: grid;
     grid-template-columns: auto auto auto;
     justify-content: center;
     grid-column-gap: 50px;
     padding-top: 20px;
     padding-bottom: 20px;
-}
-
-.garant {
+  }
+  .garant {
     display: grid;
     grid-template-columns: 500px;
     justify-content: center;
     padding-top: 20px;
     padding-bottom: 20px;
-}
-
-.grid div img {
+  }
+  .grid div img {
     width: 270px;
     height: 200px;
-    }
-
-.grid div h2,
-.garant .garant1 h2 {
+  }
+  .grid div h2 {
     color: black;
     text-align: center;
     font-size: large;
-}
-
-.grid div,
-.garant1 {
+  }
+  .garant .garant1 h2 {
+    color: black;
+    text-align: center;
+    font-size: large;
+  }
+  .grid div {
     display: grid;
-    background-color: white;
     justify-items: center;
     border-style: groove;
-    }
-    
-.grid div button {
-    background-color: black;
-    color: rgb(130, 255, 105);
-    font-family:'Lato', sans-serif;
-}
-
-
-.pagos,
-.entregas,
-.garantia {
-    color: rgb(255, 255, 255);
-    font-family: 'Lato', sans-serif;
-    text-align: center;
+    background-color: white;
+  }
+  .garant1 {
+    background-color: white;
     display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: auto;
-    grid-column-gap: 15px; 
-    grid-row-gap: 15px;
-    justify-items: stretch;
-    align-items: stretch;
-    border-radius: 15px;
-    border-style:groove;
-    background-image: url(header1.jpg);
-    animation-duration: 3s;
-    animation-name: animacion
+    justify-items: center;
+    border-style: groove;
+  }
+  .grid div button {
+    background-color: black;
+    color: #82ff69;
+    font-family: 'Lato', sans-serif;
+  }
+  @keyframes animacion {
+    from {
+      margin-left: 100%;
+      width: 300%;
     }
-              
-@keyframes animacion {
-        from {
-        margin-left: 100%;
-        width: 300%
-        }
-              
-        to {
-        margin-left: 0%;
-        width: 100%;
-        }
+    to {
+      margin-left: 0%;
+      width: 100%;
     }
-
-.ayudaimg,
-.ayudaimg1 {
-        width: 270px;
-        height: 200px;
-    }
-
-article h2 {
-            color: black
-        }
-
-.ubi {
+  }
+  article h2 {
+    color: black;
+  }
+  .ubi {
     display: flex;
     flex-direction: row;
     justify-content: center;
     flex-wrap: nowrap;
     align-items: center;
-}
-
-iframe { 
+  }
+  iframe {
     width: 1200px;
-    height: 500px 
-}
-footer {
-    color: rgb(255, 255, 255);
-    font-family: 'Lato', sans-serif;
+    height: 500px;
+  }
+  footer {
     background-image: url(header1.jpg);
     border-style: groove;
     display: grid;
-    grid-template-columns: 500px auto auto auto;
-    justify-content: space-between
-    }
-
-footer .redes { 
-    font-size: large;
+    grid-template-columns: auto;
+    justify-content: space-around;
+  }
+  footer .redes {
+    display: grid;
+    grid-template-columns: 70px 70px 70px;
+    grid-column-gap: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  footer .redes .btn-fb {
+    background-color: #2981e6;
+    font-size: medium;
     font-weight: bold;
-    padding: 5px;
-    margin: 5px;
-    display: flex;
-    text-align: right;
-    justify-content: right;
-    align-items: right;
-    flex-direction:row;
-    }
-footer .horarios {
-    display: flex;
-    color: rgb(255, 255, 255);
-    text-align: left;
-    justify-content: left;
-    align-items: left;
-    flex-direction:row;
+  }
+  footer .redes .btn-ig {
+    background-color: #ff00d4;
+    font-size: medium;
+    font-weight: bold;
+  }
+  footer .redes .btn-wpp {
+    background-color: #42f142;
+    font-size: medium;
+    font-weight: bold;
+  }
 }
-}
-
 
 /*Vista Mobile*/
-
-@media screen and (max-width: 767px){ 
-
-    * {
-        margin: 0%;
-        }
-    
-    nav div .navbar-brand {
-        font-size: x-large;
-        }
-    
-    nav {
-        font-size: x-large;
-        background-image: url(header1.jpg);
-        font-family:'Lato', sans-serif;
-        }
-            
-    nav div ul .nav-item .dropdown-menu {
-        display: none;
-        background-color: rgb(26, 26, 26);
-        } 
-                
-    nav div ul .nav-item:active .dropdown-menu {
-        background-color: rgb(26, 26, 26);
-        display: block;
-        }
-            
-    .dropdown-menu a {
-        color: white;
-            }
-            
-    .logo1 {
-        width: 250px; 
-        height: 110px;
-        }
-        
-    .logo2 {
-        display: none;
-        }
-    
-    body {
-        background-image: linear-gradient(to right, rgb(32, 31, 31), rgb(87, 85, 85))
-        }
-    
-    main {
-        padding-left: 20px;
-        padding-right: 20px;
-        }
-    h1 {
-        color: rgb(255, 255, 255);
-        font-family: 'Lato', sans-serif;
-        }
-    h2 {
-        color: rgb(255, 255, 255);
-        font-family: 'Lato', sans-serif;
-        }
-    h3 {
-        color: rgb(255, 255, 255);
-        font-family: 'Lato', sans-serif;
-        font-size: large;
-        }
-
-    h2 a {
-         color: rgb(130, 255, 105);
-    }
-        
-    
-    label {
-        color: rgb(255, 255, 255);
-        font-family: 'Lato', sans-serif;
-        }
-
-    .ubi {
-        display: flex;
-        align-content: center;
-        justify-content: center;
-        width: auto;
-    }
-    iframe { 
-        width: 400px;
-        height: 400px 
-    }
-
-    .Prod {
-        color: rgb(255, 255, 255);
-        font-family: 'Lato', sans-serif;
-        text-align: center;
-        display: grid;
-        grid-template-columns: auto;
-        grid-template-rows: auto;
-        grid-column-gap: 15px; 
-        grid-row-gap: 15px;
-        justify-items: stretch;
-        align-items: stretch;
-        border-radius: 15px;
-        border-style:groove;
-        background-image: url(header1.jpg);
-    }
-
-    .grid {
-        display: grid;
-        grid-template-columns: auto auto auto;
-        justify-content: center;
-        grid-column-gap: 20px;
-        padding-top: 20px;
-        padding-bottom: 15px;
-        padding-top: 15px;
-    }
-
-    .grid div img {
-        width: 120px;
-        height: 100px;
-        }
-    
-    .grid div h2,
-    .garant .garant1 h2 {
-        color: black;
-        text-align: center;
-        font-size: medium;
-    }
-    
-    .grid div,
-    .garant1 {
-        display: grid;
-        background-color: white;
-        justify-items: center;
-    }
-    .grid div button {
-        background-color: black;
-        color: rgb(130, 255, 105);
-        font-family:'Lato', sans-serif;
-    }
-    .pagos,
-    .entregas,
-    .garantia {
-        color: rgb(255, 255, 255);
-        font-family: 'Lato', sans-serif;
-        text-align: center;
-        display: grid;
-        grid-template-columns: auto;
-        grid-template-rows: auto;
-        grid-column-gap: 15px; 
-        grid-row-gap: 15px;
-        justify-items: stretch;
-        align-items: stretch;
-        border-radius: 15px;
-        border-style:groove;
-        background-image: url(header1.jpg);
-    }
-
-    .garant { 
-            display: grid;
-            grid-template-columns: auto;
-            grid-template-rows: auto;
-            display: flex;
-            justify-content: center;
-            padding-bottom: 15px;
-            padding-top: 15px;
-        }
-    
-    article h2 { 
-        color: black;
-    }
-    
-    .ayudaimg {
-        width: 90px;
-        height: 90px;
-    }
-
-    .ayudaimg1 {
-        width: 70px;
-        height: 70px;
-    }
-
-    footer {
-            color: rgb(255, 255, 255);
-            font-family: 'Lato', sans-serif;
-            font-size: small;
-            background-image: url(header1.jpg);
-            border-style: groove;
-            grid-area: footer;
-            display: grid;
-            grid-template-columns: auto 50px 50px 60px;
-            }
+@media screen and (max-width: 767px) {
+  * {
+    margin: 0%;
+  }
+  nav {
+    font-size: x-large;
+    background-image: url(header1.jpg);
+    font-family: 'Lato', sans-serif;
+  }
+  nav div .navbar-brand {
+    font-size: x-large;
+  }
+  nav div ul .nav-item:hover .dropdown-menu {
+    background-color: #1a1a1a;
+    display: block;
+  }
+  nav div ul .nav-item:hover .dropdown-menu a {
+    color: white;
+  }
+  nav div ul .nav-item:hover .dropdown-menu .dropdown-menu {
+    display: none;
+    background-color: #1a1a1a;
+  }
+  .logo1 {
+    width: 250px;
+    height: 110px;
+  }
+  .logo2 {
+    display: none;
+  }
+  body {
+    background-image: linear-gradient(to right, #201f1f, #575555);
+  }
+  main {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  main h1 {
+    color: white;
+    font-family: 'Lato', sans-serif;
+  }
+  main h2 {
+    color: white;
+    font-family: 'Lato', sans-serif;
+  }
+  main h3 {
+    color: white;
+    font-family: 'Lato', sans-serif;
+  }
+  h2 a {
+    color: #82ff69;
+  }
+  label {
+    color: white;
+    font-family: 'Lato', sans-serif;
+  }
+  .ubi {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    width: auto;
+  }
+  iframe {
+    width: 400px;
+    height: 400px;
+  }
+  .Prod {
+    color: white;
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-column-gap: 15px;
+    grid-row-gap: 15px;
+    justify-items: stretch;
+    align-items: stretch;
+    border-radius: 15px;
+    border-style: groove;
+    background-image: url(header1.jpg);
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+    grid-column-gap: 20px;
+    padding-top: 20px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+  }
+  .grid div img {
+    width: 120px;
+    height: 100px;
+  }
+  .grid div h2 {
+    color: black;
+    text-align: center;
+    font-size: medium;
+  }
+  .hsdeatencion {
+    text-align: center;
+    display: grid;
+    border: groove;
+    border-width: 5px;
+  }
+  .garant .garant1 h2 {
+    color: black;
+    text-align: center;
+    font-size: medium;
+  }
+  .grid div {
+    display: grid;
+    background-color: white;
+    justify-items: center;
+  }
+  .garant1 {
+    display: grid;
+    background-color: white;
+    justify-items: center;
+  }
+  .grid div button {
+    background-color: black;
+    color: #82ff69;
+    font-family: 'Lato', sans-serif;
+  }
+  .pagos,
+  .entregas,
+  .garantia {
+    color: white;
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-column-gap: 15px;
+    grid-row-gap: 15px;
+    justify-items: stretch;
+    align-items: stretch;
+    border-radius: 15px;
+    border-style: groove;
+    background-image: url(header1.jpg);
+  }
+  .garant {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 15px;
+    padding-top: 15px;
+  }
+  article h2 {
+    color: black;
+  }
+  .ayudaimg {
+    width: 90px;
+    height: 90px;
+  }
+  .ayudaimg1 {
+    width: 70px;
+    height: 70px;
+  }
+  footer {
+    background-image: url(header1.jpg);
+    border-style: groove;
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: space-around;
+  }
+  footer .redes {
+    display: grid;
+    grid-template-columns: 70px 70px 70px;
+    grid-column-gap: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  footer .redes .btn-fb {
+    background-color: #2981e6;
+    font-size: medium;
+    font-weight: bold;
+  }
+  footer .redes .btn-ig {
+    background-color: #ff00d4;
+    font-size: medium;
+    font-weight: bold;
+  }
+  footer .redes .btn-wpp {
+    background-color: #42f142;
+    font-size: medium;
+    font-weight: bold;
+  }
 }
