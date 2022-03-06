@@ -37,6 +37,9 @@ $redes: (fb:rgb(41, 129, 230), ig:rgb(255, 0, 212), wpp:rgb(66, 241, 66));
     margin: 0%;
 }
 
+header {
+    border-style: groove;
+}
 nav {
     background-image: url(header1.jpg);
     font: $tipografiaPrincipal;
@@ -266,24 +269,6 @@ iframe {
 footer {
     background-image: url(header1.jpg);
     border-style: groove;
-    display: grid;
-    grid-template-columns: auto;
-    justify-content: space-around;
-
-    .redes {
-        display: grid;
-        grid-template-columns: 70px 70px 70px;
-        grid-column-gap: 50px;
-        padding-top: 10px;
-        padding-bottom: 10px;
-       @each $i, $color in $redes {
-            .btn-#{$i} {
-                background-color: $color;
-                font-size: medium;
-                font-weight: bold;
-                    }
-                }
-            }
         }
 }
 
@@ -507,23 +492,5 @@ $redes: (fb:rgb(41, 129, 230), ig:rgb(255, 0, 212), wpp:rgb(66, 241, 66));
     footer {
         background-image: url(header1.jpg);
         border-style: groove;
-        display: grid;
-        grid-template-columns: auto;
-        justify-content: space-around;
-    
-        .redes {
-            display: grid;
-            grid-template-columns: 70px 70px 70px;
-            grid-column-gap: 50px;
-            padding-top: 10px;
-            padding-bottom: 10px;
-           @each $i, $color in $redes {
-                .btn-#{$i} {
-                    background-color: $color;
-                    font-size: medium;
-                    font-weight: bold;
-                        }
-                    }
-                }
             }
 }

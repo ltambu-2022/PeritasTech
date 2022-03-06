@@ -5,6 +5,9 @@
   * {
     margin: 0,5%;
   }
+  header {
+    border-style: groove;
+  }
   nav {
     background-image: url(header1.jpg);
     font: x-large "Lato", sans-serif;
@@ -30,6 +33,11 @@
   .logo2 {
     width: 250px;
     height: 200px;
+  }
+  div .carousel-item img {
+    width: auto;
+    padding-bottom: 20px;
+    height: 400px;
   }
   main {
     padding-left: 20px;
@@ -91,41 +99,29 @@
       width: 100%;
     }
   }
-  div .carousel-item img {
-    width: auto;
-    padding-left: 300px;
-    padding-right: 300px;
-    padding-bottom: 20px;
-    height: 600px;
+  .pcs {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+    grid-row-gap: 15px;
+  }
+  article {
+    display: grid;
+    grid-template-columns: 212px;
+    grid-template-rows: auto;
+    grid-column-gap: auto;
+    grid-row-gap: auto;
+    justify-items: center;
+    align-items: center;
+    justify-self: center;
+  }
+  article img {
+    width: 300px;
+    height: 300px;
   }
   footer {
     background-image: url(header1.jpg);
     border-style: groove;
-    display: grid;
-    grid-template-columns: auto;
-    justify-content: space-around;
-  }
-  footer .redes {
-    display: grid;
-    grid-template-columns: 70px 70px 70px;
-    grid-column-gap: 50px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-  }
-  footer .redes .btn-fb {
-    background-color: #2981e6;
-    font-size: medium;
-    font-weight: bold;
-  }
-  footer .redes .btn-ig {
-    background-color: #ff00d4;
-    font-size: medium;
-    font-weight: bold;
-  }
-  footer .redes .btn-wpp {
-    background-color: #42f142;
-    font-size: medium;
-    font-weight: bold;
   }
 }
 
@@ -159,6 +155,11 @@
   }
   .logo2 {
     display: none;
+  }
+  div .carousel-item img {
+    width: auto;
+    padding-bottom: 20px;
+    height: 200px;
   }
   body {
     background-image: linear-gradient(to right, #201f1f, #575555);
@@ -215,37 +216,28 @@
       width: 100%;
     }
   }
-  div .carousel-item img {
-    width: 200px;
-    height: 400px;
+  .pcs {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+    grid-row-gap: 15px;
+  }
+  article {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-column-gap: auto;
+    grid-row-gap: auto;
+    justify-items: center;
+    align-items: center;
+    justify-self: center;
+  }
+  article img {
+    width: 150px;
+    height: 150px;
   }
   footer {
     background-image: url(header1.jpg);
     border-style: groove;
-    display: grid;
-    grid-template-columns: auto;
-    justify-content: space-around;
-  }
-  footer .redes {
-    display: grid;
-    grid-template-columns: 70px 70px 70px;
-    grid-column-gap: 50px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-  }
-  footer .redes .btn-fb {
-    background-color: #2981e6;
-    font-size: medium;
-    font-weight: bold;
-  }
-  footer .redes .btn-ig {
-    background-color: #ff00d4;
-    font-size: medium;
-    font-weight: bold;
-  }
-  footer .redes .btn-wpp {
-    background-color: #42f142;
-    font-size: medium;
-    font-weight: bold;
   }
 }

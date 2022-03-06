@@ -25,6 +25,9 @@
   * {
     margin: 0%;
   }
+  header {
+    border-style: groove;
+  }
   nav {
     background-image: url(header1.jpg);
     font: x-large "Lato", sans-serif;
@@ -182,31 +185,6 @@
   footer {
     background-image: url(header1.jpg);
     border-style: groove;
-    display: grid;
-    grid-template-columns: auto;
-    justify-content: space-around;
-  }
-  footer .redes {
-    display: grid;
-    grid-template-columns: 70px 70px 70px;
-    grid-column-gap: 50px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-  }
-  footer .redes .btn-fb {
-    background-color: #2981e6;
-    font-size: medium;
-    font-weight: bold;
-  }
-  footer .redes .btn-ig {
-    background-color: #ff00d4;
-    font-size: medium;
-    font-weight: bold;
-  }
-  footer .redes .btn-wpp {
-    background-color: #42f142;
-    font-size: medium;
-    font-weight: bold;
   }
 }
 
@@ -376,30 +354,5 @@
   footer {
     background-image: url(header1.jpg);
     border-style: groove;
-    display: grid;
-    grid-template-columns: auto;
-    justify-content: space-around;
-  }
-  footer .redes {
-    display: grid;
-    grid-template-columns: 70px 70px 70px;
-    grid-column-gap: 50px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-  }
-  footer .redes .btn-fb {
-    background-color: #2981e6;
-    font-size: medium;
-    font-weight: bold;
-  }
-  footer .redes .btn-ig {
-    background-color: #ff00d4;
-    font-size: medium;
-    font-weight: bold;
-  }
-  footer .redes .btn-wpp {
-    background-color: #42f142;
-    font-size: medium;
-    font-weight: bold;
   }
 }

@@ -50,7 +50,34 @@
 </header>
         <br>
   <main>
-    
+
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="Imagenes/Banner1.PNG" class="d-block w-100" alt="Banner1">
+        </div>
+        <div class="carousel-item">
+          <img src="Imagenes/Banner2.PNG" class="d-block w-100" alt="Banner2">
+        </div>
+        <div class="carousel-item">
+          <img src="Imagenes/Banner3.PNG" class="d-block w-100" alt="Banner3">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Anterior</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Siguiente</span>
+      </button>
+    </div>
+
     <div class="row">
       <div class="col-sm-12 col-md-4 col-xl-4">
           <h2 id="nosotros"><span class="nosotros">¿Quiénes somos?</span></h2>
@@ -58,7 +85,7 @@
       </div>
       <div class="col-sm-12 col-md-4 col-xl-4">
           <h2 id="nosotros"><span class="nosotros">¿Qué hacemos?</span></h2>
-          <p>Nos destacamos por el armado de computadoras para todo tipo de uso y por el servicio técnico que brindamos, tambíen tenemos una amplia gama de componentes y productos para que vos mismo puedas armarte la pc de tus sueños.</p>
+          <p>Nos destacamos por el armado de computadoras para todo tipo de uso y por el servicio técnico que brindamos. Tambíen tenemos una amplia gama de componentes y productos para que vos mismo puedas armarte la pc de tus sueños.</p>
       </div>
       <div class="col-sm-12 col-md-4 col-xl-4">
           <h2 id="nosotros"><span class="nosotros">¿Qué ofrecemos?</span></h2>
@@ -67,42 +94,70 @@
   </div>
 
             <br>
-            <h2 class="armados">¡TE MOSTRAMOS ALGUNOS DE NUESTROS ARMADOS!</h2>
+            <h2 class="armados">GALERÍA DE FOTOS</h2>
             <br>
-        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img src="Imagenes/pc3.png" class="d-block w-100" alt="pc3">
-            </div>
-            <div class="carousel-item">
-              <img src="Imagenes/pc1.png" class="d-block w-100" alt="pc1">
-            </div>
-            <div class="carousel-item">
-              <img src="Imagenes/pc2.png" class="d-block w-100" alt="pc2">
-            </div>
-            <div class="carousel-item">
-              <img src="Imagenes/pc4.png" class="d-block w-100" alt="pc4">
-            </div>
-            <div class="carousel-item">
-              <img src="Imagenes/pc5.jpeg" class="d-block w-100" alt="pc5">
-            </div>
-        </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Anterior</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Siguiente</span>
-          </button>
-        </div>
+
+            <section class="pcs">
+              <article>
+              <img src="Imagenes/pc1.png">
+             </article>
+             <article>
+              <img src="Imagenes/pc3.png">
+              </article>
+              <article>
+              <img src="Imagenes/pc2.png">
+              </article>
+              <article>
+              <img src="Imagenes/pc4.png">
+              </article>
+              <article>
+              <img src="Imagenes/pc5.jpeg">
+              </article>
+              <article>
+              <img src="Imagenes/pc6.jpeg">
+              </article>
+          </section>
+
   </main>
-  <footer>
-      <div class="redes">
-        <button class="btn-fb">FB</button>
-        <button class="btn-ig">IG</button>
-        <button class="btn-wpp">WPP</button>
-      </div>
+  <footer class="text-center text-white">
+    <!-- Grid container -->
+    <div class="container p-4 pb-0">
+      <section class="mb-4">
+        <!-- Facebook -->
+        <a
+          class="btn btn-primary btn-floating m-1"
+          style="background-color: #3b5998;"
+          href="https://www.facebook.com/Peritastech-2350173518432233/" target="_blank"
+          role="button"
+          ><i class="fab fa-facebook-f"></i
+        >FB</a>
+        <!-- Instagram -->
+        <a
+          class="btn btn-primary btn-floating m-1"
+          style="background-color: #ac2bac;"
+          href="https://www.instagram.com/peritastech/?hl=es-la" target="_blank"
+          role="button"
+          ><i class="fab fa-instagram-in"></i
+        >IG</a>
+  
+        <!-- wpp -->
+        <a
+          class="btn btn-primary btn-floating m-1"
+          style="background-color: #00ca00;"
+          href="#!"
+          role="button"
+          ><i class="fab fa-whatsapp-in"></i
+        >WPP</a>
+        
+      </section>
+    </div>
+    <!-- Grid container -->
+  
+    <!-- Horarios -->
+    <div class="text-center p-3" style="background-color: rgb(26, 26, 26);">
+      Horarios de atención: lunes a viernes de 11:00 a 18:00 hs.
+    </div>
+    <!-- Horarios -->
   </footer>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
