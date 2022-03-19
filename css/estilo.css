@@ -6,11 +6,21 @@
     margin: 0,5%;
   }
   header {
+    background-image: url(header1.jpg);
     border-style: groove;
   }
+  .centrarBanner {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 100%;
+  }
   nav {
-    background-image: url(header1.jpg);
     font: x-large "Lato", sans-serif;
+    background-image: linear-gradient(to right, #201f1f, #575555);
   }
   nav div .navbar-brand {
     font-size: x-large;
@@ -26,11 +36,11 @@
     display: none;
     background-color: #1a1a1a;
   }
-  .logo1 {
-    width: 500px;
-    height: 120px;
+  .Logo1 {
+    width: 450px;
+    height: 180px;
   }
-  .logo2 {
+  .Logo2 {
     width: 250px;
     height: 200px;
   }
@@ -123,6 +133,36 @@
     background-image: url(header1.jpg);
     border-style: groove;
   }
+  .social1 {
+    position: center;
+    padding-top: 15px;
+  }
+  .social1 ul {
+    list-style: none;
+  }
+  .social1 ul a {
+    display: inline-block;
+    color: #fff;
+    background: #000;
+    padding: 10px 15px;
+    text-decoration: none;
+    -webkit-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+    transition: all 500ms ease;
+  }
+  .social1 ul .icon-facebook {
+    background: #3b5998;
+  }
+  .social1 ul .icon-instagram {
+    background: #C13584;
+  }
+  .social1 ul .icon-whatsapp {
+    background: #0bf031;
+  }
+  .social1 ul a:hover {
+    background: #000;
+    padding: 10px 30px;
+  }
 }
 
 /*Vista Mobile*/
@@ -130,10 +170,23 @@
   * {
     margin: 0,5%;
   }
+  header {
+    background-image: url(header1.jpg);
+    border-style: groove;
+  }
+  .centrarBanner {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 100%;
+  }
   nav {
     font-size: x-large;
-    background-image: url(header1.jpg);
     font-family: 'Lato', sans-serif;
+    background-image: linear-gradient(to right, #201f1f, #575555);
   }
   nav div .navbar-brand {
     font-size: x-large;
@@ -149,11 +202,11 @@
     display: none;
     background-color: #1a1a1a;
   }
-  .logo1 {
+  .Logo1 {
     width: 250px;
     height: 110px;
   }
-  .logo2 {
+  .Logo2 {
     display: none;
   }
   div .carousel-item img {
@@ -172,11 +225,11 @@
     color: white;
     font-family: 'Lato', sans-serif;
     text-align: justify;
-    font-size: x-large;
+    font-size: large;
   }
   .nosotros {
     font-family: 'Lato', sans-serif;
-    font-size: xx-large;
+    font-size: large;
     background-color: white;
     background-image: url(header1.jpg);
     display: flex;
@@ -233,11 +286,41 @@
     justify-self: center;
   }
   article img {
-    width: 150px;
-    height: 150px;
+    width: 115px;
+    height: 115px;
   }
   footer {
     background-image: url(header1.jpg);
     border-style: groove;
+  }
+  .social1 {
+    position: center;
+    padding-top: 15px;
+  }
+  .social1 ul {
+    list-style: none;
+  }
+  .social1 ul a {
+    display: inline-block;
+    color: #fff;
+    background: #000;
+    padding: 10px 15px;
+    text-decoration: none;
+    -webkit-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+    transition: all 500ms ease;
+  }
+  .social1 ul .icon-facebook {
+    background: #3b5998;
+  }
+  .social1 ul .icon-instagram {
+    background: #C13584;
+  }
+  .social1 ul .icon-whatsapp {
+    background: #0bf031;
+  }
+  .social1 ul a:hover {
+    background: #000;
+    padding: 10px 30px;
   }
 }
